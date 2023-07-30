@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "footerFont";
+    src: local("footerFont"),
+         url('./HEROEAU-ELEGANT-DEMO-BF6414311733ad5.otf') format("otf"),
+         url('./HEROEAU-ELEGANT-DEMO-BF6414311758e86.ttf') format("ttf");
+}
