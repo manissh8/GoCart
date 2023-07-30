@@ -33,13 +33,13 @@ app.use("/api/v1",order);
 app.use("/api/v1",payment);
 
 
-//ab koi bhi url ho ab ek hi server chalne wala hai backend ka PORT:4000 pe
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+// //ab koi bhi url ho ab ek hi server chalne wala hai backend ka PORT:4000 pe
+// app.use(express.static(path.join(__dirname, "../frontend/build")));
 
-//koi bhi url ho bs iske andar wala file return hoga and react does the same thing
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
-});
+// //koi bhi url ho bs iske andar wala file return hoga and react does the same thing
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+// });
 
 //Middleware for Errors
 app.use(errorMiddleware);
